@@ -93,7 +93,7 @@
 ### TC-TEASHOP-16
 
 - opis: weryfikacja przejrzystości i przyswajalności systemu nowym pracownikom
-- cel: sprawdzenie, czy nowo zatrudniony pracownik jest w stanie łatwo przyswoić funkcjonowanie systemu i wykonanie podstawowych akcji
+- cel: sprawdzenie, czy nowo zatrudniony pracownik jest w stanie łatwo przyswoić funkcjonowanie systemu i wykonanie podstawowych akcji po 10-minutowym szkoleniu
 - wymagania: REQ-NFUNC-004
 
 ### TC-TEASHOP-17
