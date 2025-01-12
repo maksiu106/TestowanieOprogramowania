@@ -225,12 +225,3 @@
 	1. Znajdź w internecie sensownie wyglądającą listę wymagań dotyczących systemów POS.
 	2. Sprawdź, czy testowane oprogramowanie spełnia dane wymagania.
 - **oczekiwane wyniki**: Testowany system jest systemem dedykowanym, więc nie musi spełniać wszystkich ogólnie przyjętych standardów. Spodziewane są pewne rozbieżności, wynikające ze specyfiki systemu i dostosowania go do konkretnych warunków.
-
-### TC-TEASHOP-19-01
-
-- **cel**: sprawdzenie, czy najważniejsze testy wykonane w izolowanym środowisku testowym mają identyczną odpowiedź, co w działającym środowisku docelowym
-- **warunki wstępne**: zautoryzowany użytkownik ma dostęp do ekranu głównego 
-- **kroki**:
-	1. Wykonaj przypadki testowe TC-TEASHOP-12-* w środowisku docelowym.
-	2. Porównaj odpowiedź systemów.
-- **oczekiwane wyniki**: System zachowuje się identycznie w obu przypadkach.
