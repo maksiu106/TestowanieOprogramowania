@@ -88,7 +88,7 @@
 - **cel**: sprawdzenie, czy archiwum towarów ma wprowadzone zabezpieczenia na wypadek wprowadzania niewłaściwych wartości i przepełniania bufora znaków.
 - **warunki wstępne**: zautoryzowany użytkownik ma dostęp do ekranu głównego
 - **kroki**:
-	1, W pasku górnym kliknij "Magazyn".
+	1. W pasku górnym kliknij "Magazyn".
 	2. Wprowadź nowy towar.
 	3. Jako nazwę towaru wprowadź możliwie najdłuższy ciąg znaków.
 	4. Jako cenę towaru wprowadź ciąg tekstowy.
