@@ -130,15 +130,6 @@
 	3. Porównaj, czy zamówienia wprowadzane na jednym urządzeniu pojawiają się również na drugim.
 - **oczekiwane wyniki**: Zmiany wprowadzane na jednej platformie/urządzeniu stają się w krótkim czasie widoczne na drugim.
 
-### TC-TEASHOP-10-01
-
-- **cel**: sprawdzenie, czy system uruchomiony na lokalnym urządzeniu działa identycznie z systemem uruchomionym na zewnętrznym serwerze
-- **warunki wstępne**: dostęp do systemu uruchomionego w środowisku docelowym, system postawiony na lokalnym serwerze, zautoryzowany użytkownik ma dostęp do ekranu głównego
-- **kroki**:
-	1. Wybierz najważniejsze z testów wykonanych w odizolowanym środowisku testowym.
-	2. Powtórz przypadki testowe w środowisku docelowym.
-- **oczekiwane wyniki**: Zachodzi pełna zgodność w zachowaniu systemu w obu przypadkach.
-
 ### TC-TEASHOP-11-01
 
 - **cel**: sprawdzenie przejrzystości komunikacji systemu z pracownikiem i informacji o powodzeniu bądź niepowodzeniu podjętych działań
@@ -216,12 +207,3 @@
 	1. Polecić osobie stworzyć zamówienie oraz wprowadzić jego zadane dowolne parametry, nie podając szczegółów, jak to zrobić.
 	2. Polecić osobie stworzyć rezerwację.
 - **oczekiwane wyniki**: Użytkownik nieznający systemu po chwili szukania odpowiednich elementów na stronie jest w stanie wykonać najprostsze akcje.
-
-### TC-TEASHOP-17-01
-
-- **cel**: sprawdzenie, czy system jest zgodny z ogólnie przyjętymi standardami programów POS
-- **warunki wstępne**: dostęp do internetu, zautoryzowany użytkownik ma dostęp do ekranu głównego
-- **kroki**:
-	1. Znajdź w internecie sensownie wyglądającą listę wymagań dotyczących systemów POS.
-	2. Sprawdź, czy testowane oprogramowanie spełnia dane wymagania.
-- **oczekiwane wyniki**: Testowany system jest systemem dedykowanym, więc nie musi spełniać wszystkich ogólnie przyjętych standardów. Spodziewane są pewne rozbieżności, wynikające ze specyfiki systemu i dostosowania go do konkretnych warunków.
