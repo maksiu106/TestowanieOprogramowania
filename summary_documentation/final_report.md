@@ -6,21 +6,21 @@ Poniższy raport zawiera podsumowanie wykonanych testów dla systemu ewidencji h
 
 ### 2. Szczegóły
 
-‑ **data wykonania raportu**: 21.01.2024
-‑ **tester**: Krzysztof Czarnowus
+- **data wykonania raportu**: 21.01.2024
+- **tester**: Krzysztof Czarnowus
 
 ### 3. Cel i zakres testów
 
-‑ **cel**: Szczegółowe zbadanie używanego od kilku lat systemu w kontekście wsparcia określenia wymagań przed dalszym rozwojem aplikacji bądź zaprojektowaniem nowej o analogicznym przeznaczeniu.
-‑ **strategia**: Przyjęto czarnoskrzynkową metodę testowania na aplikacji uruchomionej w środowisku docelowym. Początkowo planowano uruchomienie systemu w odizolowanym środowisku testowym, jednak natrafiono na istotne trudności (patrz: dział "Zidentyfikowane problemy", podpunkt 8).
-‑ **zakres**: Przetestowano wszystkie kluczowe funkcjonalności  związanych z tworzeniem i modyfikacją zamówień, ustawianiem ich parametrów, modyfikowaniem bazy danych z ofertą towarów, zarządzaniem rezerwacjami, zbieraniem dobowych danych o zamówieniach, możliwości działania na wielu urządzeniach jednocześnie. Przeprowadzono również analizę wymagań niefunkcjonalnych związanych z czasem odpowiedzi, bezpieczeństwem oraz niezawodnością systemu.
+- **cel**: Szczegółowe zbadanie używanego od kilku lat systemu w kontekście wsparcia określenia wymagań przed dalszym rozwojem aplikacji bądź zaprojektowaniem nowej o analogicznym przeznaczeniu.
+- **strategia**: Przyjęto czarnoskrzynkową metodę testowania na aplikacji uruchomionej w środowisku docelowym. Początkowo planowano uruchomienie systemu w odizolowanym środowisku testowym, jednak natrafiono na istotne trudności (patrz: dział "Zidentyfikowane problemy", podpunkt 8).
+- **zakres**: Przetestowano wszystkie kluczowe funkcjonalności  związanych z tworzeniem i modyfikacją zamówień, ustawianiem ich parametrów, modyfikowaniem bazy danych z ofertą towarów, zarządzaniem rezerwacjami, zbieraniem dobowych danych o zamówieniach, możliwości działania na wielu urządzeniach jednocześnie. Przeprowadzono również analizę wymagań niefunkcjonalnych związanych z czasem odpowiedzi, bezpieczeństwem oraz niezawodnością systemu.
 
 ### 4. Podsumowanie wyników testów
 
-‑ **liczba wykonanych przypadków testowych**: 38
-‑ **liczba zaliczonych przypadków testowych**: 20
-‑ **liczba znalezionych błędów**: 18
-‑ **procent sukcesu testów**: 52.6%
+- **liczba wykonanych przypadków testowych**: 38
+- **liczba zaliczonych przypadków testowych**: 20
+- **liczba znalezionych błędów**: 18
+- **procent sukcesu testów**: 52.6%
 
 ### 5. Zidentyfikowane problemy
 
