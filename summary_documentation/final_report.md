@@ -17,9 +17,9 @@ Poniższy raport zawiera podsumowanie wykonanych testów dla systemu ewidencji h
 
 ### 4. Podsumowanie wyników testów
 
-- **liczba wykonanych przypadków testowych**: 38
-- **liczba zaliczonych przypadków testowych**: 20
-- **liczba znalezionych błędów**: 18
+- **liczba wykonanych przypadków testowych**: 19
+- **liczba zaliczonych przypadków testowych**: 10
+- **liczba znalezionych błędów**: 9
 - **procent sukcesu testów**: 52.6%
 
 ### 5. Zidentyfikowane problemy
