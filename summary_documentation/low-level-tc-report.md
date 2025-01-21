@@ -160,7 +160,7 @@
 - **opis**: sprawdzenie zachowania systemu po wprowadzeniu niepoprawnej nazwy stolika w zamówieniu
 - **data wykonania**: 12.01.2025
 - **tester**: Krzysztof Czarnowus
-- **status**: <span style="color: orange;">częściowo zaliczony</span>
+- **status**: ⚠️ <span style="color: orange;">częściowo zaliczony</span>
 
 ### Opis wykonania
 
@@ -171,7 +171,7 @@
 |----------|------------|-------|--------------|
 | 1 | Utwórz kilka zamówień. | Utworzono trzy zamówienia. | zaliczony |
 | 2 | Wprowadź nazwy kilku stolików zgodnie z przyjętą konwencją. | Dla dwóch z utworzonych zamówień wprowadzono nazwy "b304" oraz "m70". Zaobserwowano poprawne posortowanie zamówień oraz podświetlenie ich zgodnie z kolorem sali. | zaliczony |
-| 3 | Wprowadź niepoprawną nazwę stolika. | Wprowadzono nazwę stolika, która jest przekopiowaną treścią "Pana Tadeusza". Cała treść została wprowadzona, po czym zaobserwowano gwałtowny spadek czasu odpowiedzi systemu. Stolik z nieprawidłową nazwą nie został posortowany ani podświetlony. | <span style="color: orange;">częściowo zaliczony</span> |
+| 3 | Wprowadź niepoprawną nazwę stolika. | Wprowadzono nazwę stolika, która jest przekopiowaną treścią "Pana Tadeusza". Cała treść została wprowadzona, po czym zaobserwowano gwałtowny spadek czasu odpowiedzi systemu. Stolik z nieprawidłową nazwą nie został posortowany ani podświetlony. | ⚠️ <span style="color: orange;">częściowo zaliczony</span> |
 
 **uwagi**: System poprawnie rozpoznaje dopuszczalne nazwy stolików i odpowiedni jest sortuje, zauważono jednak, że pole nazwy stolika nie ma dopuszczalnego bufora znaków, pozwalając na wprowadzenie nielimitowanej ich ilości, co może w ekstremalnych przypadkach przełożyć się na gwałtowne pogorszenie wydajności funkcjonowania systemu.
 
@@ -183,7 +183,7 @@
 - **opis**: sprawdzenie, czy archiwum towarów ma wprowadzone zabezpieczenia na wypadek wprowadzania niewłaściwych wartości i przepełniania bufora znaków.
 - **data wykonania**: 12.01.2025
 - **tester**: Krzysztof Czarnowus
-- **status**: <span style="color: red;">niezaliczony</span>
+- **status**: ❌ <span style="color: red;">niezaliczony</span>
 
 ### Opis wykonania
 
@@ -194,7 +194,7 @@
 |----------|------------|-------|--------------|
 | 1 | W pasku górnym kliknij "Magazyn". | Wybrano odpowiednią zakładkę. | zaliczony |
 | 2 | Wprowadź nowy towar. | Wybrano opcję tworzenia nowego produktu. | zaliczony |
-| 3 | Jako nazwę towaru wprowadź długi ciąg znaków | W odpowiednie pole przekopiowano wiersz Morsztyna "Do Kanikuły". Cała treść została dopuszczona. | <span style="color: red;">niezaliczony</span> |
+| 3 | Jako nazwę towaru wprowadź długi ciąg znaków | W odpowiednie pole przekopiowano wiersz Morsztyna "Do Kanikuły". Cała treść została dopuszczona. | ❌ <span style="color: red;">niezaliczony</span> |
 | 4 | Jako cenę towaru wprowadź ciąg tekstowy. | Spróbowano wprowadzić ciąg liter, na co system nie pozwolił. | zaliczony |
 | 5 | Wróć do ekranu głównego. | Powrócono do ekranu głównego. | zaliczony |
 | 6 | Utwórz nowe zamówienie, używając stworzonego towaru. | Utworzono zamówienie, wybierając towar, którego nazwa jest barokowym wierszem. Zauważono wyraźny spadek czasu odpowiedzi systemu. | zaliczony |
@@ -209,7 +209,7 @@
 - **opis**: sprawdzenie zabezpieczeń systemu rezerwacji przed wprowadzaniem niewłaściwych parametrów i przepełnienia bufora znaków
 - **data wykonania**: 12.01.2025
 - **tester**: Krzysztof Czarnowus
-- **status**: <span style="color: red;">niezaliczony</span>
+- **status**: ❌ <span style="color: red;">niezaliczony</span>
 
 ### Opis wykonania
 
@@ -219,8 +219,8 @@
 | nr kroku | opis kroku | wynik | status testu |
 |----------|------------|-------|--------------|
 | 1 | W pasku górnym kliknij "Rezerwacje". | Wybrano odpowiednią zakładkę. | zaliczony |
-| 2 | Utwórz nową rezerwację. | Wybrano przycisk tworzenia rezerwacji. Zaobserwowano wyłączenie systemu i pokazywanie pustej strony. Po odczekaniu około minuty ponowiono próbę, obserwując poprawne wyświetlenie okienka dodawania rezerwacji. | <span style="color: red;">niezaliczony</span> |
-| 3 | W którymś z pól wprowadź możliwie jak najdłuższy ciąg znaków. | W pole do uwag dotyczących zamówienia wprowadzono całą treść "Przedwiośnia" Stefana Żeromskiego, na co system pozwolił. Zaobserwowano gwałtowny spadek czasu odpowiedzi systemu. | <span style="color: red;">niezaliczony</span> |
+| 2 | Utwórz nową rezerwację. | Wybrano przycisk tworzenia rezerwacji. Zaobserwowano wyłączenie systemu i pokazywanie pustej strony. Po odczekaniu około minuty ponowiono próbę, obserwując poprawne wyświetlenie okienka dodawania rezerwacji. | ❌ <span style="color: red;">niezaliczony</span> |
+| 3 | W którymś z pól wprowadź możliwie jak najdłuższy ciąg znaków. | W pole do uwag dotyczących zamówienia wprowadzono całą treść "Przedwiośnia" Stefana Żeromskiego, na co system pozwolił. Zaobserwowano gwałtowny spadek czasu odpowiedzi systemu. | ❌ <span style="color: red;">niezaliczony</span> |
 | 4 | Zapisz rezerwację. | Ze względu na ryzyko awarii, nie zdecydowano się na zapisanie rezerwacji z błędnymi danymi | brak |
 
 **uwagi**: System nie posiada zabezpieczeń na wypadek przepełnienia pól tekstowych przy tworzeniu rezerwacji i zezwala na utworzenie nieograniczenie długiego ciągu znaków, co przekłada się na zauważalny spadek jego wydajności i wprowadza ryzyko awarii.
@@ -233,7 +233,7 @@
 - **opis**: sprawdzenie, czy podczas zamykania zamówień wszystkie w odpowiedni sposób trafiają do archiwum i są sumowane zgodnie z oczekiwaniami
 - **data wykonania**: 12.01.2025
 - **tester**: Krzysztof Czarnowus
-- **status**: <span style="color: red;">niezaliczony</span>
+- **status**: ❌ <span style="color: red;">niezaliczony</span>
 
 ### Opis wykonania
 
@@ -247,7 +247,7 @@
 | 3 | W pasku górnym wybierz "Archiwum". | Wybrano odpowiednią zakładkę. | zaliczony |
 | 4 | Sprawdź, czy zamknięte zamówienia znalazły się w archiwum, a także czy podsumowanie ceny zgadza się z wartością faktyczną. | Potwierdzono obecność obu zamówień i poprawne zsumowanie ich kwoty. | zaliczony |
 | 5 | Kliknij przycisk "Przywróć" | Wybrano odpowiedni przycik. | zaliczony |
-| 6 | Wróć do ekranu głównego i sprawdź, czy przywrócone zamówienie znajduje się na liście, wraz ze wszystkimi wprowadzonymi wcześniej parametrami. | Przywrócono oba zamówienia, które pojawiły się na ekranie głównym. Zniknęła jednak informacja o ich statusie opłacenia oraz stopniu przygotowania - jedynie stolik pozostał zaznaczony. | <span style="color: red;">niezaliczony</span> |
+| 6 | Wróć do ekranu głównego i sprawdź, czy przywrócone zamówienie znajduje się na liście, wraz ze wszystkimi wprowadzonymi wcześniej parametrami. | Przywrócono oba zamówienia, które pojawiły się na ekranie głównym. Zniknęła jednak informacja o ich statusie opłacenia oraz stopniu przygotowania - jedynie stolik pozostał zaznaczony. | ❌ <span style="color: red;">niezaliczony</span> |
 
 **uwagi**: Zaobserwowano, że przy przywracaniu zamówień z archiwum giną wszystkie informacje o nich poza listą zamówionych w ich ramach towarów. Może to być celowa architektura, mająca na celu zmniejszenie ilości przechowywanych informacji, jednak prawdopodobnie w niektórych przypadkach może wyraźnie brakować tej funkcjonalności.
 
@@ -259,7 +259,7 @@
 - **opis**: sprawdzenie, czy możliwe jest połączenie się z systemem na dwóch różnych urządzeniach/platformach, a także czy wprowadzane dane są odpowiednio odświeżane na obu
 - **data wykonania**: 12.01.2025
 - **tester**: Krzysztof Czarnowus
-- **status**: <span style="color: red;">niezaliczony</span>
+- **status**: ❌ <span style="color: red;">niezaliczony</span>
 
 ### Opis wykonania
 
@@ -270,7 +270,7 @@
 |----------|------------|-------|--------------|
 | 1 | Utwórz zamówienie z dowolnymi parametrami na jednym urządzeniu. | Utworzono odpowiednie zamówienie i wprowadzono kilka towarów. | zaliczony |
 | 2 | Na drugim urządzeniu utwórz inne zamówienie w ramach systemu połączonym z tym samym serwerem. | Na drugiej przeglądarce utworzono inne zamówienie i wprowadzono jego parametry. | zaliczony |
-| 3 | Porównaj, czy zamówienia wprowadzane na jednym urządzeniu pojawiają się również na drugim. | Zaobserwowano, że na żadnej z przeglądarek nie wyświetlają się zamówienia wprowadzone w drugiej z nich. Po zamknięciu zamówień można jednak znaleźć oba w archiwum na obu mediach. | <span style="color: red;">niezaliczony</span> |
+| 3 | Porównaj, czy zamówienia wprowadzane na jednym urządzeniu pojawiają się również na drugim. | Zaobserwowano, że na żadnej z przeglądarek nie wyświetlają się zamówienia wprowadzone w drugiej z nich. Po zamknięciu zamówień można jednak znaleźć oba w archiwum na obu mediach. | ❌ <span style="color: red;">niezaliczony</span> |
 
 **uwagi**: System został stworzony pod działanie na tylko jednym urządzeniu - dane o zamówieniach zbierane są w pamięci podręcznej, a dopiero po ich zamknięciu trafiają do bazy danych. Możliwe, że zwiększa to jego wydajność, ale wyraźnie ogranicza uniwersalność zastosowania, co jest również ważnym czynnikiem.
 
@@ -282,7 +282,7 @@
 - **opis**: sprawdzenie przejrzystości komunikacji systemu z pracownikiem i informacji o powodzeniu bądź niepowodzeniu podjętych działań
 - **data wykonania**: 12.01.2025
 - **tester**: Krzysztof Czarnowus
-- **status**: <span style="color: red;">niezaliczony</span>
+- **status**: ❌ <span style="color: red;">niezaliczony</span>
 
 ### Opis wykonania
 
@@ -293,7 +293,7 @@
 |----------|------------|-------|--------------|
 | 1 | Wybierz wśród wykonanych testów te, w których czas oczekiwania na odpowiedź systemu był zauważalnie większy. | Zdecydowano się na powtórzenie przypadku testowego TC-TEASHOP-07-03. | zaliczony |
 | 2 | Powtórz przypadki testowe. | Wprowadzono pięciokrotną treść wiersza Jana Morsztyna "Na krzyżyk na piersiach jednej panny" i wybrano opcję zapisania rezerwacji. Zauważono spowolnienie systemu wskutek wprowadzenia długiego ciągu znaków. | zaliczony |
-| 3 | Zwracaj uwagę na obecność bądź nieobecność informacji zwrotnych. | Wybrano opcję zapisania rezerwacji. System przetwarzał polecenie ok. 3 s, nie podając żadnej informacji zwrotnej dotyczącej tego, czy zajmuje się jego wykonaniem. | <span style="color: red;">niezaliczony</span> |
+| 3 | Zwracaj uwagę na obecność bądź nieobecność informacji zwrotnych. | Wybrano opcję zapisania rezerwacji. System przetwarzał polecenie ok. 3 s, nie podając żadnej informacji zwrotnej dotyczącej tego, czy zajmuje się jego wykonaniem. | ❌ <span style="color: red;">niezaliczony</span> |
 
 **uwagi**: Powtórzono jeden z przypadków testowych, sprawdzając obecność informacji zwrotnej systemu w sytuacjach przetwarzania dłuższych poleceń - jest to tylko jeden przykład, jednak na nim nie zaobserwowano żadnego komunikatu. Poleca się sprawdzić również inne funkcjonalności na rzecz informowania użytkownika o przetwarzaniu przez system kosztowniejszych czasowo poleceń.
 
@@ -305,7 +305,7 @@
 - **opis**: sprawdzenie zachowania systemu przy natychmiastowym wprowadzeniu kilku różnych parametrów zamówienia
 - **data wykonania**: 12.01.2025
 - **tester**: Krzysztof Czarnowus
-- **status**: <span style="color: red;">niezaliczony</span>
+- **status**: ❌ <span style="color: red;">niezaliczony</span>
 
 ### Opis wykonania
 
@@ -316,7 +316,7 @@
 |----------|------------|-------|--------------|
 | 1 | Kliknij "Nowe zamówienie". | Wybrano odpowiedni przycik. | zaliczony |
 | 2 | Wprowadź dwa dowolne towary. | Wprowadzono dwa różne towary do utworzonego zamówienia. | zaliczony |
-| 3 | Za pomocą systemu do automatyzacji kliknięć zaznacz status wyniesienia obu towarów oraz status opłacenia zamówienia - każdy w odstępie 0.5 s. | Zaobserwowano, że system ma problem z natychmiastowym przetworzeniem obu poleceń. Ikonki ze statusem wyniesienia zaczynają świecić na różne kolory. Po odświeżeniu strony wszystkie są nieodznaczone. | <span style="color: red;">niezaliczony</span> | 
+| 3 | Za pomocą systemu do automatyzacji kliknięć zaznacz status wyniesienia obu towarów oraz status opłacenia zamówienia - każdy w odstępie 0.5 s. | Zaobserwowano, że system ma problem z natychmiastowym przetworzeniem obu poleceń. Ikonki ze statusem wyniesienia zaczynają świecić na różne kolory. Po odświeżeniu strony wszystkie są nieodznaczone. | ❌ <span style="color: red;">niezaliczony</span> | 
 
 **uwagi**: Twórca systemu zauważył problem z responsywnością systemu przy szybkich manipulacjach danymi, jednak zamiast go rozwiązać, wprowadził zabawny komunikat o przeciążeniu - co jest dobrą praktyką, ale pewnie lepszą byłoby spróbować rozwiązać problem.
 
@@ -351,7 +351,7 @@
 - **opis**: sprawdzenie zachowania systemu przy kilkukrotnym kliknięciu zapisania rezerwacji
 - **data wykonania**: 12.01.2025
 - **tester**: Krzysztof Czarnowus
-- **status**: <span style="color: red;">niezaliczony</span>
+- **status**: ❌ <span style="color: red;">niezaliczony</span>
 
 ### Opis wykonania
 
@@ -363,7 +363,7 @@
 | 1 | W pasku górnym kliknij "Rezerwacje". | Wybrano odpowiednią zakładkę. | zaliczony |
 | 2 | Utwórz nową rezerwację. | Wybrano opcję tworzenia rezerwacji. | zaliczony |
 | 3 | Wprowadź odpowiednie parametry - imię, godzinę i datę oraz stolik. | Wprowadzono odpowiednie dane. | zaliczony |
-| 4 | Za pomocą programu do automatyzacji kliknięć wykonaj kilkukrotne zapisanie rezerwacji w odstępie 0.5 s. | Wykonano dwukrotne zapisanie rezerwacji. Odkryto, że obie, o identycznych parametrach, zostały zapisane. | <span style="color: red;">niezaliczony</span> |
+| 4 | Za pomocą programu do automatyzacji kliknięć wykonaj kilkukrotne zapisanie rezerwacji w odstępie 0.5 s. | Wykonano dwukrotne zapisanie rezerwacji. Odkryto, że obie, o identycznych parametrach, zostały zapisane. | ❌ <span style="color: red;">niezaliczony</span> |
 
 **uwagi**: System nie posiada zabezpieczenia na wypadek przypadkowego kilkukrotnego wprowadzenia tej samej rezerwacji poprzez kilkukrotne wciśnięcie przycisku zapisania.
 
@@ -375,7 +375,7 @@
 - **opis**: sprawdzenie, czy system posiada zabezpieczenia na wypadek kilkukrotnego wysłania zamówienia do archwium bądź przywrócenia go.
 - **data wykonania**: 12.01.2025
 - **tester**: Krzysztof Czarnowus
-- **status**: <span style="color: red;">niezaliczony</span>
+- **status**: ❌ <span style="color: red;">niezaliczony</span>
 
 ### Opis wykonania
 
@@ -386,8 +386,8 @@
 |----------|------------|-------|--------------|
 | 1 | Stwórz zamówienie i wprowadź jego dowolne parametry. | Stworzono zamówienie i wprowadzono jeden towar | zaliczony |
 | 2 | Za pomocą programu do automatyzacji kliknięć zamknij zamówienie kilkukrotnie w odstępie 0.5 s. | Wykonano zgodnie z instrukcją. | zaliczony |
-| 3 | W pasku górnym wybierz "Archiwum". | Wybrano odpowiednią zakładkę. Zaobserwowano, że zamówienie zostało zapisane w archiwum dwukrotnie. | <span style="color: red;">niezaliczony</span> |
-| 4 | Rozwiń zamknięte zamówienie i za pomocą programu do automatyzacji kliknięć przywróć zamówienie kilkukrotnie w odstępie 0.5 s. | Jedno z utworzonych zamówień przywrócono, klikając za pomocą programu trzykrotnie odpowiedni przycisk. Po powrocie na stronę główną zaobserwowano, że przywrócone zamówienie występuje w trzech kopiach. | <span style="color: red;">niezaliczony</span> |
+| 3 | W pasku górnym wybierz "Archiwum". | Wybrano odpowiednią zakładkę. Zaobserwowano, że zamówienie zostało zapisane w archiwum dwukrotnie. | ❌ <span style="color: red;">niezaliczony</span> |
+| 4 | Rozwiń zamknięte zamówienie i za pomocą programu do automatyzacji kliknięć przywróć zamówienie kilkukrotnie w odstępie 0.5 s. | Jedno z utworzonych zamówień przywrócono, klikając za pomocą programu trzykrotnie odpowiedni przycisk. Po powrocie na stronę główną zaobserwowano, że przywrócone zamówienie występuje w trzech kopiach. | ❌ <span style="color: red;">niezaliczony</span> |
 
 **uwagi**: System nie posiada zabezpieczenia na wypadek kilkukrotnego zamknięcia oraz kilkukrotnego przywrócenia wybranego zamówienia z archiwum, tworząc duplikaty.
 
@@ -607,7 +607,7 @@
 - **opis**: sprawdzenie zachowania systemu po wprowadzeniu niepoprawnej nazwy stolika w zamówieniu
 - **data wykonania**: 12.01.2025
 - **tester**: Krzysztof Czarnowus
-- **status**: <span style="color: orange;">częściowo zaliczony</span>
+- **status**: ⚠️ <span style="color: orange;">częściowo zaliczony</span>
 
 ### Opis wykonania
 
@@ -618,7 +618,7 @@
 |----------|------------|-------|--------------|
 | 1 | Utwórz kilka zamówień. | Utworzono trzy zamówienia. | zaliczony |
 | 2 | Wprowadź nazwy kilku stolików zgodnie z przyjętą konwencją. | Dla dwóch z utworzonych zamówień wprowadzono nazwy "b304" oraz "m70". Zaobserwowano poprawne posortowanie zamówień oraz podświetlenie ich zgodnie z kolorem sali. | zaliczony |
-| 3 | Wprowadź niepoprawną nazwę stolika. | Wprowadzono nazwę stolika, która jest przekopiowaną treścią "Pana Tadeusza". Cała treść została wprowadzona, po czym zaobserwowano gwałtowny spadek czasu odpowiedzi systemu. Stolik z nieprawidłową nazwą nie został posortowany ani podświetlony. | <span style="color: orange;">częściowo zaliczony</span> |
+| 3 | Wprowadź niepoprawną nazwę stolika. | Wprowadzono nazwę stolika, która jest przekopiowaną treścią "Pana Tadeusza". Cała treść została wprowadzona, po czym zaobserwowano gwałtowny spadek czasu odpowiedzi systemu. Stolik z nieprawidłową nazwą nie został posortowany ani podświetlony. | ⚠️ <span style="color: orange;">częściowo zaliczony</span> |
 
 **uwagi**: System poprawnie rozpoznaje dopuszczalne nazwy stolików i odpowiedni jest sortuje, zauważono jednak, że pole nazwy stolika nie ma dopuszczalnego bufora znaków, pozwalając na wprowadzenie nielimitowanej ich ilości, co może w ekstremalnych przypadkach przełożyć się na gwałtowne pogorszenie wydajności funkcjonowania systemu.
 
@@ -630,7 +630,7 @@
 - **opis**: sprawdzenie, czy archiwum towarów ma wprowadzone zabezpieczenia na wypadek wprowadzania niewłaściwych wartości i przepełniania bufora znaków.
 - **data wykonania**: 12.01.2025
 - **tester**: Krzysztof Czarnowus
-- **status**: <span style="color: red;">niezaliczony</span>
+- **status**: ❌ <span style="color: red;">niezaliczony</span>
 
 ### Opis wykonania
 
@@ -641,7 +641,7 @@
 |----------|------------|-------|--------------|
 | 1 | W pasku górnym kliknij "Magazyn". | Wybrano odpowiednią zakładkę. | zaliczony |
 | 2 | Wprowadź nowy towar. | Wybrano opcję tworzenia nowego produktu. | zaliczony |
-| 3 | Jako nazwę towaru wprowadź długi ciąg znaków | W odpowiednie pole przekopiowano wiersz Morsztyna "Do Kanikuły". Cała treść została dopuszczona. | <span style="color: red;">niezaliczony</span> |
+| 3 | Jako nazwę towaru wprowadź długi ciąg znaków | W odpowiednie pole przekopiowano wiersz Morsztyna "Do Kanikuły". Cała treść została dopuszczona. | ❌ <span style="color: red;">niezaliczony</span> |
 | 4 | Jako cenę towaru wprowadź ciąg tekstowy. | Spróbowano wprowadzić ciąg liter, na co system nie pozwolił. | zaliczony |
 | 5 | Wróć do ekranu głównego. | Powrócono do ekranu głównego. | zaliczony |
 | 6 | Utwórz nowe zamówienie, używając stworzonego towaru. | Utworzono zamówienie, wybierając towar, którego nazwa jest barokowym wierszem. Zauważono wyraźny spadek czasu odpowiedzi systemu. | zaliczony |
@@ -656,7 +656,7 @@
 - **opis**: sprawdzenie zabezpieczeń systemu rezerwacji przed wprowadzaniem niewłaściwych parametrów i przepełnienia bufora znaków
 - **data wykonania**: 12.01.2025
 - **tester**: Krzysztof Czarnowus
-- **status**: <span style="color: red;">niezaliczony</span>
+- **status**: ❌ <span style="color: red;">niezaliczony</span>
 
 ### Opis wykonania
 
@@ -666,8 +666,8 @@
 | nr kroku | opis kroku | wynik | status testu |
 |----------|------------|-------|--------------|
 | 1 | W pasku górnym kliknij "Rezerwacje". | Wybrano odpowiednią zakładkę. | zaliczony |
-| 2 | Utwórz nową rezerwację. | Wybrano przycisk tworzenia rezerwacji. Zaobserwowano wyłączenie systemu i pokazywanie pustej strony. Po odczekaniu około minuty ponowiono próbę, obserwując poprawne wyświetlenie okienka dodawania rezerwacji. | <span style="color: red;">niezaliczony</span> |
-| 3 | W którymś z pól wprowadź możliwie jak najdłuższy ciąg znaków. | W pole do uwag dotyczących zamówienia wprowadzono całą treść "Przedwiośnia" Stefana Żeromskiego, na co system pozwolił. Zaobserwowano gwałtowny spadek czasu odpowiedzi systemu. | <span style="color: red;">niezaliczony</span> |
+| 2 | Utwórz nową rezerwację. | Wybrano przycisk tworzenia rezerwacji. Zaobserwowano wyłączenie systemu i pokazywanie pustej strony. Po odczekaniu około minuty ponowiono próbę, obserwując poprawne wyświetlenie okienka dodawania rezerwacji. | ❌ <span style="color: red;">niezaliczony</span> |
+| 3 | W którymś z pól wprowadź możliwie jak najdłuższy ciąg znaków. | W pole do uwag dotyczących zamówienia wprowadzono całą treść "Przedwiośnia" Stefana Żeromskiego, na co system pozwolił. Zaobserwowano gwałtowny spadek czasu odpowiedzi systemu. | ❌ <span style="color: red;">niezaliczony</span> |
 | 4 | Zapisz rezerwację. | Ze względu na ryzyko awarii, nie zdecydowano się na zapisanie rezerwacji z błędnymi danymi | brak |
 
 **uwagi**: System nie posiada zabezpieczeń na wypadek przepełnienia pól tekstowych przy tworzeniu rezerwacji i zezwala na utworzenie nieograniczenie długiego ciągu znaków, co przekłada się na zauważalny spadek jego wydajności i wprowadza ryzyko awarii.
@@ -680,7 +680,7 @@
 - **opis**: sprawdzenie, czy podczas zamykania zamówień wszystkie w odpowiedni sposób trafiają do archiwum i są sumowane zgodnie z oczekiwaniami
 - **data wykonania**: 12.01.2025
 - **tester**: Krzysztof Czarnowus
-- **status**: <span style="color: red;">niezaliczony</span>
+- **status**: ❌ <span style="color: red;">niezaliczony</span>
 
 ### Opis wykonania
 
@@ -694,7 +694,7 @@
 | 3 | W pasku górnym wybierz "Archiwum". | Wybrano odpowiednią zakładkę. | zaliczony |
 | 4 | Sprawdź, czy zamknięte zamówienia znalazły się w archiwum, a także czy podsumowanie ceny zgadza się z wartością faktyczną. | Potwierdzono obecność obu zamówień i poprawne zsumowanie ich kwoty. | zaliczony |
 | 5 | Kliknij przycisk "Przywróć" | Wybrano odpowiedni przycik. | zaliczony |
-| 6 | Wróć do ekranu głównego i sprawdź, czy przywrócone zamówienie znajduje się na liście, wraz ze wszystkimi wprowadzonymi wcześniej parametrami. | Przywrócono oba zamówienia, które pojawiły się na ekranie głównym. Zniknęła jednak informacja o ich statusie opłacenia oraz stopniu przygotowania - jedynie stolik pozostał zaznaczony. | <span style="color: red;">niezaliczony</span> |
+| 6 | Wróć do ekranu głównego i sprawdź, czy przywrócone zamówienie znajduje się na liście, wraz ze wszystkimi wprowadzonymi wcześniej parametrami. | Przywrócono oba zamówienia, które pojawiły się na ekranie głównym. Zniknęła jednak informacja o ich statusie opłacenia oraz stopniu przygotowania - jedynie stolik pozostał zaznaczony. | ❌ <span style="color: red;">niezaliczony</span> |
 
 **uwagi**: Zaobserwowano, że przy przywracaniu zamówień z archiwum giną wszystkie informacje o nich poza listą zamówionych w ich ramach towarów. Może to być celowa architektura, mająca na celu zmniejszenie ilości przechowywanych informacji, jednak prawdopodobnie w niektórych przypadkach może wyraźnie brakować tej funkcjonalności.
 
@@ -706,7 +706,7 @@
 - **opis**: sprawdzenie, czy możliwe jest połączenie się z systemem na dwóch różnych urządzeniach/platformach, a także czy wprowadzane dane są odpowiednio odświeżane na obu
 - **data wykonania**: 12.01.2025
 - **tester**: Krzysztof Czarnowus
-- **status**: <span style="color: red;">niezaliczony</span>
+- **status**: ❌ <span style="color: red;">niezaliczony</span>
 
 ### Opis wykonania
 
@@ -717,7 +717,7 @@
 |----------|------------|-------|--------------|
 | 1 | Utwórz zamówienie z dowolnymi parametrami na jednym urządzeniu. | Utworzono odpowiednie zamówienie i wprowadzono kilka towarów. | zaliczony |
 | 2 | Na drugim urządzeniu utwórz inne zamówienie w ramach systemu połączonym z tym samym serwerem. | Na drugiej przeglądarce utworzono inne zamówienie i wprowadzono jego parametry. | zaliczony |
-| 3 | Porównaj, czy zamówienia wprowadzane na jednym urządzeniu pojawiają się również na drugim. | Zaobserwowano, że na żadnej z przeglądarek nie wyświetlają się zamówienia wprowadzone w drugiej z nich. Po zamknięciu zamówień można jednak znaleźć oba w archiwum na obu mediach. | <span style="color: red;">niezaliczony</span> |
+| 3 | Porównaj, czy zamówienia wprowadzane na jednym urządzeniu pojawiają się również na drugim. | Zaobserwowano, że na żadnej z przeglądarek nie wyświetlają się zamówienia wprowadzone w drugiej z nich. Po zamknięciu zamówień można jednak znaleźć oba w archiwum na obu mediach. | ❌ <span style="color: red;">niezaliczony</span> |
 
 **uwagi**: System został stworzony pod działanie na tylko jednym urządzeniu - dane o zamówieniach zbierane są w pamięci podręcznej, a dopiero po ich zamknięciu trafiają do bazy danych. Możliwe, że zwiększa to jego wydajność, ale wyraźnie ogranicza uniwersalność zastosowania, co jest również ważnym czynnikiem.
 
@@ -729,7 +729,7 @@
 - **opis**: sprawdzenie przejrzystości komunikacji systemu z pracownikiem i informacji o powodzeniu bądź niepowodzeniu podjętych działań
 - **data wykonania**: 12.01.2025
 - **tester**: Krzysztof Czarnowus
-- **status**: <span style="color: red;">niezaliczony</span>
+- **status**: ❌ <span style="color: red;">niezaliczony</span>
 
 ### Opis wykonania
 
@@ -740,7 +740,7 @@
 |----------|------------|-------|--------------|
 | 1 | Wybierz wśród wykonanych testów te, w których czas oczekiwania na odpowiedź systemu był zauważalnie większy. | Zdecydowano się na powtórzenie przypadku testowego TC-TEASHOP-07-03. | zaliczony |
 | 2 | Powtórz przypadki testowe. | Wprowadzono pięciokrotną treść wiersza Jana Morsztyna "Na krzyżyk na piersiach jednej panny" i wybrano opcję zapisania rezerwacji. Zauważono spowolnienie systemu wskutek wprowadzenia długiego ciągu znaków. | zaliczony |
-| 3 | Zwracaj uwagę na obecność bądź nieobecność informacji zwrotnych. | Wybrano opcję zapisania rezerwacji. System przetwarzał polecenie ok. 3 s, nie podając żadnej informacji zwrotnej dotyczącej tego, czy zajmuje się jego wykonaniem. | <span style="color: red;">niezaliczony</span> |
+| 3 | Zwracaj uwagę na obecność bądź nieobecność informacji zwrotnych. | Wybrano opcję zapisania rezerwacji. System przetwarzał polecenie ok. 3 s, nie podając żadnej informacji zwrotnej dotyczącej tego, czy zajmuje się jego wykonaniem. | ❌ <span style="color: red;">niezaliczony</span> |
 
 **uwagi**: Powtórzono jeden z przypadków testowych, sprawdzając obecność informacji zwrotnej systemu w sytuacjach przetwarzania dłuższych poleceń - jest to tylko jeden przykład, jednak na nim nie zaobserwowano żadnego komunikatu. Poleca się sprawdzić również inne funkcjonalności na rzecz informowania użytkownika o przetwarzaniu przez system kosztowniejszych czasowo poleceń.
 
@@ -752,7 +752,7 @@
 - **opis**: sprawdzenie zachowania systemu przy natychmiastowym wprowadzeniu kilku różnych parametrów zamówienia
 - **data wykonania**: 12.01.2025
 - **tester**: Krzysztof Czarnowus
-- **status**: <span style="color: red;">niezaliczony</span>
+- **status**: ❌ <span style="color: red;">niezaliczony</span>
 
 ### Opis wykonania
 
@@ -763,7 +763,7 @@
 |----------|------------|-------|--------------|
 | 1 | Kliknij "Nowe zamówienie". | Wybrano odpowiedni przycik. | zaliczony |
 | 2 | Wprowadź dwa dowolne towary. | Wprowadzono dwa różne towary do utworzonego zamówienia. | zaliczony |
-| 3 | Za pomocą systemu do automatyzacji kliknięć zaznacz status wyniesienia obu towarów oraz status opłacenia zamówienia - każdy w odstępie 0.5 s. | Zaobserwowano, że system ma problem z natychmiastowym przetworzeniem obu poleceń. Ikonki ze statusem wyniesienia zaczynają świecić na różne kolory. Po odświeżeniu strony wszystkie są nieodznaczone. | <span style="color: red;">niezaliczony</span> | 
+| 3 | Za pomocą systemu do automatyzacji kliknięć zaznacz status wyniesienia obu towarów oraz status opłacenia zamówienia - każdy w odstępie 0.5 s. | Zaobserwowano, że system ma problem z natychmiastowym przetworzeniem obu poleceń. Ikonki ze statusem wyniesienia zaczynają świecić na różne kolory. Po odświeżeniu strony wszystkie są nieodznaczone. | ❌ <span style="color: red;">niezaliczony</span> | 
 
 **uwagi**: Twórca systemu zauważył problem z responsywnością systemu przy szybkich manipulacjach danymi, jednak zamiast go rozwiązać, wprowadził zabawny komunikat o przeciążeniu - co jest dobrą praktyką, ale pewnie lepszą byłoby spróbować rozwiązać problem.
 
@@ -798,7 +798,7 @@
 - **opis**: sprawdzenie zachowania systemu przy kilkukrotnym kliknięciu zapisania rezerwacji
 - **data wykonania**: 12.01.2025
 - **tester**: Krzysztof Czarnowus
-- **status**: <span style="color: red;">niezaliczony</span>
+- **status**: ❌ <span style="color: red;">niezaliczony</span>
 
 ### Opis wykonania
 
@@ -810,7 +810,7 @@
 | 1 | W pasku górnym kliknij "Rezerwacje". | Wybrano odpowiednią zakładkę. | zaliczony |
 | 2 | Utwórz nową rezerwację. | Wybrano opcję tworzenia rezerwacji. | zaliczony |
 | 3 | Wprowadź odpowiednie parametry - imię, godzinę i datę oraz stolik. | Wprowadzono odpowiednie dane. | zaliczony |
-| 4 | Za pomocą programu do automatyzacji kliknięć wykonaj kilkukrotne zapisanie rezerwacji w odstępie 0.5 s. | Wykonano dwukrotne zapisanie rezerwacji. Odkryto, że obie, o identycznych parametrach, zostały zapisane. | <span style="color: red;">niezaliczony</span> |
+| 4 | Za pomocą programu do automatyzacji kliknięć wykonaj kilkukrotne zapisanie rezerwacji w odstępie 0.5 s. | Wykonano dwukrotne zapisanie rezerwacji. Odkryto, że obie, o identycznych parametrach, zostały zapisane. | ❌ <span style="color: red;">niezaliczony</span> |
 
 **uwagi**: System nie posiada zabezpieczenia na wypadek przypadkowego kilkukrotnego wprowadzenia tej samej rezerwacji poprzez kilkukrotne wciśnięcie przycisku zapisania.
 
@@ -822,7 +822,7 @@
 - **opis**: sprawdzenie, czy system posiada zabezpieczenia na wypadek kilkukrotnego wysłania zamówienia do archwium bądź przywrócenia go.
 - **data wykonania**: 12.01.2025
 - **tester**: Krzysztof Czarnowus
-- **status**: <span style="color: red;">niezaliczony</span>
+- **status**: ❌ <span style="color: red;">niezaliczony</span>
 
 ### Opis wykonania
 
@@ -833,8 +833,8 @@
 |----------|------------|-------|--------------|
 | 1 | Stwórz zamówienie i wprowadź jego dowolne parametry. | Stworzono zamówienie i wprowadzono jeden towar | zaliczony |
 | 2 | Za pomocą programu do automatyzacji kliknięć zamknij zamówienie kilkukrotnie w odstępie 0.5 s. | Wykonano zgodnie z instrukcją. | zaliczony |
-| 3 | W pasku górnym wybierz "Archiwum". | Wybrano odpowiednią zakładkę. Zaobserwowano, że zamówienie zostało zapisane w archiwum dwukrotnie. | <span style="color: red;">niezaliczony</span> |
-| 4 | Rozwiń zamknięte zamówienie i za pomocą programu do automatyzacji kliknięć przywróć zamówienie kilkukrotnie w odstępie 0.5 s. | Jedno z utworzonych zamówień przywrócono, klikając za pomocą programu trzykrotnie odpowiedni przycisk. Po powrocie na stronę główną zaobserwowano, że przywrócone zamówienie występuje w trzech kopiach. | <span style="color: red;">niezaliczony</span> |
+| 3 | W pasku górnym wybierz "Archiwum". | Wybrano odpowiednią zakładkę. Zaobserwowano, że zamówienie zostało zapisane w archiwum dwukrotnie. | ❌ <span style="color: red;">niezaliczony</span> |
+| 4 | Rozwiń zamknięte zamówienie i za pomocą programu do automatyzacji kliknięć przywróć zamówienie kilkukrotnie w odstępie 0.5 s. | Jedno z utworzonych zamówień przywrócono, klikając za pomocą programu trzykrotnie odpowiedni przycisk. Po powrocie na stronę główną zaobserwowano, że przywrócone zamówienie występuje w trzech kopiach. | ❌ <span style="color: red;">niezaliczony</span> |
 
 **uwagi**: System nie posiada zabezpieczenia na wypadek kilkukrotnego zamknięcia oraz kilkukrotnego przywrócenia wybranego zamówienia z archiwum, tworząc duplikaty.
 
