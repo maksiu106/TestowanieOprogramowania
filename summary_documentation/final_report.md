@@ -52,4 +52,4 @@ Można również jednoznacznie określić, że najpoważniejszym znalezionym def
 - [Specyfikacja wymagań](../requirements_specification.pdf)
 - [Plan testów](../TESTPLAN.md)
 - [Opis niskopoziomowych wypadków testowych](../low_level_test_cases.md)
-- [Raport z wykonania przypadków testowych](low_level_tc_report.md)
+- [Raport z wykonania przypadków testowych](low-level-tc-report.md)
